@@ -1,0 +1,528 @@
+
+
+/* dimensions for mobile */
+
+header{ 
+
+    display: flex;
+    /* justify-content:space-between; */
+    flex-wrap:wrap;
+    flex-direction: row;
+    width: 100%;
+    /* height:5px; */
+}
+ 
+
+.logo { 
+    background-image: url(images/aloha-logo.svg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:top left;
+    align-items:left;
+    justify-items: left;
+
+    height:30px; 
+    width:50%;
+    order:1;
+   
+
+}
+.cart{
+    background-image: url(images/cart-icon.svg);
+    background-size:contain;
+    height:30px; 
+    width:50%;
+    align-items:right;
+    justify-content: right;
+    background-repeat:no-repeat;
+    order:2;
+    
+ 
+  
+    
+
+
+}
+  
+
+.top-navigation-links {
+    flex-basis: 90%;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    order:3;
+}
+.top-navigation-links li{
+    display:inline;
+    
+}
+.top-navigation-links a{
+    display:inline-block;
+    /* margin-top: 5px; */
+    /* padding:5px; */
+    color:#e2574c;
+ 
+}
+
+
+ /* dimensions for desktop tablet */
+/* header{ 
+
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    flex-direction: row;
+    /* width: 100%;*/
+    /* height:5px; */
+}
+ 
+/* 
+.logo { 
+    background-image: url(images/aloha-logo.svg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:top left;
+
+    height:50px; 
+    width:100px;
+   
+
+}
+.cart{
+    background-image: url(images/cart-icon.svg);
+    background-size:contain;
+    height:50px;
+    width:100px;
+    border-right:20px;
+    background-repeat:no-repeat;
+    background-position:top right; */
+    */
+
+
+}
+  
+
+.top-navigation-links {
+    height:100px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.top-navigation-links li{
+    display:inline;
+    
+}
+.top-navigation-links a{
+    display:inline-block;
+    margin-top: 25px;
+    padding:10px;
+    color:#e2574c;
+ 
+}
+
+
+
+.banner {
+    background-image: url(images/banner-girl.png),url(images/flower-bkgd.jpg);
+    background-size: 18rem,cover;
+    background-repeat: no-repeat,no-repeat;
+    background-position: bottom center,center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 800px;   
+}
+@media screen and (min-width:600px){
+    .banner{
+        background-size: 25rem,cover;
+    }
+}
+
+.new-collection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    z-index:2;
+    font-family:PlayfairDisplay;
+    font-size: 14px;
+    color: white;
+
+}
+/*  tablet design for banner */
+
+
+@media screen and (min-width:600px){
+    .new-collection{
+        font-size:16px;
+
+    }
+
+    .banner{
+        width:100%;
+        height:1000px;
+    }
+}
+
+
+/* mobile first for shopping categories */
+.shop {
+    height:800px;
+    width:100%;
+    display:flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    object-fit:contain;
+
+    
+
+}
+
+.men-category{
+    background-image: url(images/mens-category.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow: 2; 
+    height:25%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+ 
+}
+
+.trends-category{
+    background-image: url(images/trends-category.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow: 1; 
+    width:50%;
+    height:25%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.glasses-category{
+    background-image:url(images/glasses-category.jpg); 
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow: 1; 
+    width:50%;
+    height:25%;display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.sales-category{
+    background-image: url(images/sale-category.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow: 1;
+    width:50%; 
+    height:25%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.bags-category{
+    background-image: url(images/bags-category.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow: 1; 
+    width:50%;
+    height:25%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.womens-category {
+    background-image: url(images/womens-category.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow: 2; 
+    width:100%;
+    height:25%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+   
+}
+
+
+/* design for shopping categories on 
+ tablet and desktop   */
+
+
+
+@media screen and (min-width:600px){
+    .shop {
+        height:1000px;
+        width:100%;
+        display:flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+        object-fit:contain;
+}
+
+.men-category {
+    height:50%;
+    width:50%;
+
+}
+
+.trends-category {
+    height:50%;
+    width:25%;
+}
+ 
+.glasses-category{
+    height:50%;
+    width:25%;
+}
+
+.sales-category{
+    height:50%;
+    width:25%;
+}
+
+.bags-category{
+    height:50%;
+    width:25%;
+}
+
+.womens-category{
+    height:50%;
+    width:50%;
+
+}
+}
+
+
+
+
+
+
+    
+
+.About{
+  
+    display:flex;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    height:50%;
+
+
+}
+
+.About-title1{
+    font-family: PlayfairDisplay-Italic;
+    font-size: 14px;
+}
+
+.About p{
+    font-family: Raleway-Italic;
+    font-size: 14px;
+}
+
+
+.most-loved-products{
+    width:100%;
+    height:20px;
+    text-align: center;
+}
+
+
+/*caroussel desktop */
+
+
+.carousel {
+    width:100%;
+    padding-bottom:20px;
+    /* height:500px;      */
+     align-content: center;
+    align-items: center;
+  }
+
+  .carousel-cell1{
+    /* width: 30%; */
+    /* height: 500px; */
+ margin-right: 10px;
+    border-radius: 5px; 
+    counter-increment: carousel-cell;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    
+  }
+
+.carousel-cell2{
+    /* width: 30%; */
+    /* height: 500px; */
+    margin-right: 10px;
+    border-radius: 5px; 
+    counter-increment: carousel-cell;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+
+}
+.carousel-cell3{
+    /* width: 30%; */
+    /* height: 500px; */
+    margin-right: 10px;
+    border-radius: 5px; 
+    counter-increment: carousel-cell;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.carousel-cell4{
+    /* width: 30%; */
+    /* height: 500px; */
+    margin-right: 10px;
+    border-radius: 5px; 
+    counter-increment: carousel-cell;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}   
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    align-content: center;
+    align-items: center;
+    line-height: 600px;
+    font-size: 14px; 
+    color: black;
+  }  
+
+.sign-up{
+    height:400px;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding-top: 100px;
+
+
+}
+
+.sign-up-image-background{
+    background-image: url(images/wave-bkgd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+
+
+footer
+{
+   background:#242424;
+   color: white;}
+  /* display: inline;
+   height: 200px;
+      justify-content: space-between;*/
+   
+   /* design for mobile  */
+
+
+      .contact{
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        width: 100%;
+       justify-content: center;
+       align-content: center;
+      }
+
+
+.address {
+    width:100%;
+    text-align: center;
+
+}
+
+.social{
+    width:100%;
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (min-width:600px){
+.contact{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    width: 100%;
+   justify-content: space-between;
+   align-content: space-between;
+}
+   
+   .address{
+    width:50%;
+    text-align: left;
+    color:white;
+    
+}
+
+   .social{
+    width:50%;
+    text-align: right;
+    color:white;
+}
+}
+
+
+footer a{
+    color:white;
+}
