@@ -5,11 +5,10 @@
 header{ 
 
     display: flex;
-    /* justify-content:space-between; */
     flex-wrap:wrap;
     flex-direction: row;
     width: 100%;
-    /* height:5px; */
+    height: 5rem;
 }
  
 
@@ -20,7 +19,6 @@ header{
     background-position:top left;
     align-items:left;
     justify-items: left;
-
     height:30px; 
     width:50%;
     order:1;
@@ -30,29 +28,29 @@ header{
 .cart{
     background-image: url(images/cart-icon.svg);
     background-size:contain;
+    background-position:top right;
     height:30px; 
     width:50%;
     align-items:right;
     justify-content: right;
     background-repeat:no-repeat;
     order:2;
-    
- 
-  
-    
-
 
 }
   
 
 .top-navigation-links {
-    flex-basis: 90%;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-    order:3;
+  
+    border-top: 0.15rem solid lightgray;
+    list-style: none;
+    margin-top: 0.3rem;
+    text-align: center;
+    order: 3;
+    width: 100%;
+    height: 3rem;
+    
 }
+
 .top-navigation-links li{
     display:inline;
     
@@ -60,24 +58,28 @@ header{
 .top-navigation-links a{
     display:inline-block;
     /* margin-top: 5px; */
-    /* padding:5px; */
+    padding:0.25rem;
+    margin-top: 0.5rem;
     color:#e2574c;
- 
+    text-transform:uppercase;
 }
 
 
  /* dimensions for desktop tablet */
-/* header{ 
+
+ @media screen and (min-width:600px){
+     
+header{ 
 
     display: flex;
     justify-content:space-between;
     flex-wrap:wrap;
     flex-direction: row;
-    /* width: 100%;*/
-    /* height:5px; */
+    width: 100%;
+    height:5px; 
 }
  
-/* 
+
 .logo { 
     background-image: url(images/aloha-logo.svg);
     background-size:contain;
@@ -96,11 +98,10 @@ header{
     width:100px;
     border-right:20px;
     background-repeat:no-repeat;
-    background-position:top right; */
-    */
+    background-position:top right; }*/
+    
 
 
-}
   
 
 .top-navigation-links {
@@ -116,17 +117,18 @@ header{
 }
 .top-navigation-links a{
     display:inline-block;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     padding:10px;
     color:#e2574c;
  
 }
 
 
+ }
 
 .banner {
     background-image: url(images/banner-girl.png),url(images/flower-bkgd.jpg);
-    background-size: 18rem,cover;
+    background-size: 8rem,cover;
     background-repeat: no-repeat,no-repeat;
     background-position: bottom center,center;
     display: flex;
@@ -134,7 +136,7 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 800px;   
+    height: 20rem;   
 }
 @media screen and (min-width:600px){
     .banner{
@@ -196,6 +198,8 @@ header{
     font-size: 14px;
     color: white;
     text-transform: uppercase;
+    margin-bottom: 0.25rem;
+   
  
 }
 
@@ -204,7 +208,7 @@ header{
     background-size:cover;
     background-repeat:no-repeat;
     flex-grow: 1; 
-    width:50%;
+    width:45%;
     height:25%;
     display: flex;
     align-items: center;
@@ -213,6 +217,7 @@ header{
     font-size: 14px;
     color: white;
     text-transform: uppercase;
+    border-right: 0.25rem solid;
 }
 
 .glasses-category{
@@ -220,7 +225,7 @@ header{
     background-size:cover;
     background-repeat:no-repeat;
     flex-grow: 1; 
-    width:50%;
+    width:45%;
     height:25%;display: flex;
     align-items: center;
     text-align: center;
@@ -228,6 +233,7 @@ header{
     font-size: 14px;
     color: white;
     text-transform: uppercase;
+    border-bottom: 0.25rem solid;
     
 }
 
@@ -236,7 +242,7 @@ header{
     background-size:cover;
     background-repeat:no-repeat;
     flex-grow: 1;
-    width:50%; 
+    width:45%; 
     height:25%;
     display: flex;
     align-items: center;
@@ -245,6 +251,8 @@ header{
     font-size: 14px;
     color: white;
     text-transform: uppercase;
+    border-bottom: 0.25rem solid;
+    border-right: 0.25rem solid;
 }
 
 .bags-category{
@@ -252,7 +260,7 @@ header{
     background-size:cover;
     background-repeat:no-repeat;
     flex-grow: 1; 
-    width:50%;
+    width:45%;
     height:25%;
     display: flex;
     align-items: center;
@@ -261,6 +269,8 @@ header{
     font-size: 14px;
     color: white;
     text-transform: uppercase;
+    border-bottom: 0.25rem solid;
+    /* border-right: 0.25rem solid; */
 }
 
 .womens-category {
@@ -362,8 +372,10 @@ header{
 
 .most-loved-products{
     width:100%;
-    height:20px;
-    text-align: center;
+    height: 5rem;
+    margin-top: 5rem;
+    text-align:center;
+
 }
 
 
