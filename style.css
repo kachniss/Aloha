@@ -1,6 +1,7 @@
 
 
-/* dimensions for mobile */
+/* Header for Mobile */
+/* @media screen and (max-width:600px){ */
 
 header{ 
 
@@ -10,9 +11,9 @@ header{
     width: 100%;
     height: 5rem;
 }
- 
 
-.logo { 
+
+.logo{ 
     background-image: url(images/aloha-logo.svg);
     background-size:contain;
     background-repeat:no-repeat;
@@ -22,9 +23,9 @@ header{
     height:30px; 
     width:50%;
     order:1;
-   
-
 }
+
+
 .cart{
     background-image: url(images/cart-icon.svg);
     background-size:contain;
@@ -32,14 +33,13 @@ header{
     height:30px; 
     width:50%;
     align-items:right;
-    justify-content: right;
+   align-content: right;
     background-repeat:no-repeat;
     order:2;
-
 }
-  
 
-.top-navigation-links {
+
+.top-navigation-links{
   
     border-top: 0.15rem solid lightgray;
     list-style: none;
@@ -62,69 +62,70 @@ header{
     margin-top: 0.5rem;
     color:#e2574c;
     text-transform:uppercase;
+    font-size: 14px;
 }
 
 
- /* dimensions for desktop tablet */
+
 
  @media screen and (min-width:600px){
-     
-header{ 
+  
+    header{ 
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 100%;
+      height: 5rem;
+    }
 
-    display: flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    flex-direction: row;
-    width: 100%;
-    height:5px; 
-}
- 
+    .logo{ 
+        background-image: url(images/aloha-logo.svg);
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:top left;
+        order:1;
+        height: 7rem;
+        width: 7rem;
+    }
 
-.logo { 
-    background-image: url(images/aloha-logo.svg);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:top left;
-
-    height:50px; 
-    width:100px;
-   
-
-}
-.cart{
+  .cart{
     background-image: url(images/cart-icon.svg);
     background-size:contain;
     height:50px;
-    width:100px;
+    width: 15%;
     border-right:20px;
     background-repeat:no-repeat;
-    background-position:top right; }*/
-    
-
-
-  
-
-.top-navigation-links {
-    height:100px;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-}
-.top-navigation-links li{
-    display:inline;
-    
-}
-.top-navigation-links a{
-    display:inline-block;
-    /* margin-top: 25px; */
-    padding:10px;
-    color:#e2574c;
- 
+    background-position:top right;
+    order:3; 
 }
 
+    .top-navigation-links {
+        border-top:none;
+        list-style: none;
+        margin-top: 0.3rem;
+        text-align: center;
+        order: 2;
+        height: 3rem;
+        width: auto;
+    }
+    .top-navigation-links li{
+        display:inline;
+        
+    }
+    .top-navigation-links a{
+        display:inline-block;
+        margin-top: 25px; 
+        padding:10px;
+        color:#e2574c;
+        font-size: 16px;
+    }
 
  }
+ /* dimensions for desktop tablet */
+
+ /* @media screen and (max-width:600px){ */
+
 
 .banner {
     background-image: url(images/banner-girl.png),url(images/flower-bkgd.jpg);
@@ -136,11 +137,35 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 20rem;   
+    height: 20rem;  
+
 }
+    .new-collection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: block;
+        z-index:2;
+        font-family:PlayfairDisplay;
+        font-size: 14px;
+        color: white; 
+}
+
+ /* } */
 @media screen and (min-width:600px){
     .banner{
-        background-size: 25rem,cover;
+ background-image: url(images/banner-girl.png),url(images/flower-bkgd.jpg);
+    background-size: contain,cover;
+    background-repeat: no-repeat,no-repeat;
+    background-position: bottom center,center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40rem;   
+}
+        
     }
 }
 
@@ -164,27 +189,29 @@ header{
 
     }
 
-    .banner{
+    /* .banner{
         width:100%;
         height:1000px;
-    }
+    } */
 }
 
-
+ 
 /* mobile first for shopping categories */
+
+
 .shop {
-    height:800px;
+    height: 40rem;
     width:100%;
     display:flex;
     flex-flow: row wrap;
     align-content: flex-start;
     object-fit:contain;
-
+    margin-bottom: 3rem;
     
 
-}
+} 
 
-.men-category{
+ .men-category{
     background-image: url(images/mens-category.jpg);
     background-size:cover;
     background-repeat:no-repeat;
@@ -201,7 +228,7 @@ header{
     margin-bottom: 0.25rem;
    
  
-}
+} 
 
 .trends-category{
     background-image: url(images/trends-category.jpg);
@@ -218,7 +245,7 @@ header{
     color: white;
     text-transform: uppercase;
     border-right: 0.25rem solid;
-}
+} 
 
 .glasses-category{
     background-image:url(images/glasses-category.jpg); 
@@ -235,9 +262,9 @@ header{
     text-transform: uppercase;
     border-bottom: 0.25rem solid;
     
-}
+} 
 
-.sales-category{
+ .sales-category{
     background-image: url(images/sale-category.jpg);
     background-size:cover;
     background-repeat:no-repeat;
@@ -253,7 +280,7 @@ header{
     text-transform: uppercase;
     border-bottom: 0.25rem solid;
     border-right: 0.25rem solid;
-}
+} 
 
 .bags-category{
     background-image: url(images/bags-category.jpg);
@@ -271,8 +298,8 @@ header{
     text-transform: uppercase;
     border-bottom: 0.25rem solid;
     /* border-right: 0.25rem solid; */
-}
 
+} 
 .womens-category {
     background-image: url(images/womens-category.jpg);
     background-size:cover;
@@ -288,7 +315,9 @@ header{
     color: white;
     text-transform: uppercase;
    
-}
+} 
+
+
 
 
 /* design for shopping categories on 
@@ -298,48 +327,141 @@ header{
 
 @media screen and (min-width:600px){
     .shop {
-        height:1000px;
+        height:30rem;
         width:100%;
         display:flex;
-        flex-flow: row wrap;
+        flex-wrap: wrap;
+        flex-direction: row;
         align-content: flex-start;
         object-fit:contain;
 }
 
 .men-category {
-    height:50%;
-    width:50%;
+     
+    background-image: url(images/mens-category.jpg);
 
-}
+    height:50%;
+    width:45%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow: 2; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    border-right: 0.25rem solid;
+    background-position: center;
+
+ }
 
 .trends-category {
+    background-image: url(images/trends-category.jpg);
+
     height:50%;
-    width:25%;
-}
- 
+    width: 20%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow: 2; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;; 
+    border-right: 0.25rem solid;
+    background-position: center;
+} 
+
 .glasses-category{
+    background-image:url(images/glasses-category.jpg); 
+
     height:50%;
-    width:25%;
-}
+    width: 20%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow: 2; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem; 
+    background-position: center;
+} 
 
 .sales-category{
+
+    background-image: url(images/sale-category.jpg);
+
     height:50%;
-    width:25%;
+    width:20%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow: 2; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    border-right: 0.25rem solid;
+    background-position: center;
 }
 
 .bags-category{
+
+    background-image: url(images/bags-category.jpg);
+
     height:50%;
-    width:25%;
-}
+    width:20%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow: 2; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    border-right: 0.25rem solid;
+    background-position: center;
+    
+} 
 
 .womens-category{
+    background-image: url(images/womens-category.jpg);
+ 
+
     height:50%;
-    width:50%;
+    width:45%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow: 2; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    background-position: center;
 
 }
+
 }
-
-
 
 
 
