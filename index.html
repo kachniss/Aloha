@@ -35,10 +35,10 @@
     
     <div class="top-navigation-links">
       <ul>
-        <li> <a href="/Users/amsan/Desktop/project1-aloha2/About.html"> About </a> </li>
-        <li> <a href="/Users/amsan/Desktop/project1-aloha2/Shop.html"> Shop </a></li>
-        <li> <a href="/Users/amsan/Desktop/project1-aloha2/Featured.html"> Featured </a> </li>
-        <li> <a href="/Users/amsan/Desktop/project1-aloha2/Updates.html"> Updates </a></li>
+        <li> <a href="#About-Aloha"> About </a> </li>
+        <li> <a href="#Shop"> Shop </a></li>
+        <li> <a href="#Featured"> Featured </a> </li>
+        <li> <a href="#Updates"> Updates </a></li>
       </ul>
     </div>
 
@@ -66,17 +66,20 @@
             <br>
 
   <div class= "About">
-    <span class = "About-title1"><h2>Hand-Crafted</h2></span>
-    <span class="About-title2"></span> <h2> Styles</h2> </pan>
+
+    <p id="About-Aloha">
+    <h2>Hand-Crafted Styles</h2>
+
     <p> Aloha Apparel Co. sells only the finest ready-to-travel clothing.</p> 
     <p> Browse our current selection of products or sign-up for updates below.</p>
+  </p>
   </div>
 
 
     <br> 
 
 <div class= "shop">
-
+<p id="Shop"></p>
 <div class = "men-category">
   Men's
 </div>
@@ -103,53 +106,13 @@
 
 </div> 
 
-
-    <!--
-
-  <div class ="shopping-categories">
-
-    <div class="categories-part-1">
- 
-      <div class="mens">  
-        Men's
-      </div>
-
-      <div class= "trends">
-        Trends
-      </div>
-
-      <div class="glasses">
-        Glasses  
-      </div>
-
-  </div>
-
-           
+<!-- -->
 
 
-    <div class= "categories-part-2">
-
-     <div class= "sales">
-       Sales
-     </div>
-
-     <div class="bags"> 
-       Bags
-     </div>
-
-     <div class="womens">
-       Women's
-     </div> 
-
-  </div> 
-
---> 
-
-</div>
 <div class="most-loved-products">
-    
+   <p id="Featured">
   <h2> Most-Loved Products </h2>
-
+</p> 
 </div>
 
 
@@ -196,19 +159,20 @@ data-flickity='{ "wrapAround": true }'>
   </div>
 
 <div class= "sign-up">
-
+<p id="Updates"></p>
   <div class= "sign-up-image-background"> 
 
     <div class = "sign-up-form">
     
-     <h2> Sign Up for Updates </h2> 
+     <h2> Sign-Up for Updates </h2> 
 
      <p> Stay updated on our lastest products realeases, be first to find out about upcoming sales, 
-     and get free style tips from our blog. Unsubscribe</p>
+     and get free style tips from our blog. Unsubscribe at any time. </p>
     
 
-      <form> <input type= "text">
-       <input type="submit" value="Subscribe"> 
+     <form action="submit.php" method="post">
+        <input type="email" placeholder="Your Email">
+       <button type="submit">Subscribe</button>  
       </form>
 
     </div>  
@@ -255,6 +219,6 @@ data-flickity='{ "wrapAround": true }'>
 
 </body>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </html>
 
