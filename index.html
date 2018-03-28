@@ -15,13 +15,14 @@
 <link rel="stylesheet" href="style.css"> 
 <link rel="stylesheet" href="style600px.css">
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<link rel= "stylesheet" href="/Users/amsan/Desktop/project1-aloha2/fonts-all/fonts.css">
-<link rel="stylesheet" href="/Users/amsan/Desktop/project1-aloha2/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel= "stylesheet" href="fonts-all/fonts.css">
+<link rel="stylesheet" href="fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
 
 </head>
 <body>
 
- 
+  <!-- skip link -->
+  <a class="screen-reader-text" href="#content">Skip to content</a>
 
   <header>
 
@@ -78,7 +79,7 @@
 
     <br> 
 
-<div class= "shop">
+<div class= "shop" id="content">
 <p id="Shop"></p>
 <div class = "men-category">
   Men's
@@ -171,6 +172,7 @@ data-flickity='{ "wrapAround": true }'>
     
       
      <form action="#" method="post">
+        <label for="txtEmail" class="screen-reader-text">Type your email</label>
         <input type="email" id='txtEmail' placeholder="Your Email">
        <button type="submit" id='btnValidate' Value='Validate Email'>Subscribe </button>  
       </form>
@@ -186,10 +188,13 @@ data-flickity='{ "wrapAround": true }'>
 
   <div class= "contact">
 
-    <div class="address">
+    <div class="address" tabindex="0">
+      <div class="screen-reader-text">Contact information</div>
       <p>2006 Aloha Apparel.co </p>
       <p>Powered by html and css</p>
+      <div class="screen-reader-text">Phone number and email</div>
       <p>604-604-6040 <a href="mailto:info@alohaapparel.com">info@alohaapparel.com </a> </p>
+      <div class="screen-reader-text">Address</div>
       <p>1490 W Broadway</p>
       <p>Vancouver, BC, Canada </p> 
     </div>
@@ -197,14 +202,14 @@ data-flickity='{ "wrapAround": true }'>
 
 
 
-    <div class= "social">
- 
+    <div class= "social" tabindex="0">
+      <div class="screen-reader-text">Social media links</div>
       <ul>
-        <li> <i class="fab fa-facebook-f"></i> <a href= Facebook> Facebook </a> </li>
-        <li> <i class="fab fa-twitter"></i> <a href= Twitter> Twitter </a> </li>
-        <li> <i class="fab fa-instagram"></i> <a href= instagram> Instagram</a> </li>
-        <li> <i class="fab fa-pinterest-square"></i> <a href= Pinterest> Pinterest</a> </li>
-        <li> <i class="fab fa-google-plus-g"></i> <a href= Google+> Google+</a> </li>
+        <li> <i class="fab fa-facebook-f" aria-hidden="true"></i> <a href= Facebook> Facebook </a> </li>
+        <li> <i class="fab fa-twitter" aria-hidden="true"></i> <a href= Twitter> Twitter </a> </li>
+        <li> <i class="fab fa-instagram" aria-hidden="true"></i> <a href= instagram> Instagram</a> </li>
+        <li> <i class="fab fa-pinterest-square" aria-hidden="true"></i> <a href= Pinterest> Pinterest</a> </li>
+        <li> <i class="fab fa-google-plus-g" aria-hidden="true"></i> <a href= Google+> Google+</a> </li>
       </ul>
 
     </div>
@@ -224,6 +229,7 @@ data-flickity='{ "wrapAround": true }'>
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<!-- <script src="tota11y.min.js"></script> -->
 
 </html>
 
